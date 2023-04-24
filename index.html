@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="icon" href="./img/ICON_PORSCHE.png">
+        <title>PORSCHE</title>
+    </head>
+    <body>
+        <nav>
+            <div class="section navigation">
+                <div class="MeinLogo">
+                    <div>PORSCHE 911</div>
+                    <div>992 GT3</div>
+                </div>
+            <ul class="navigation_ul">
+                <li class="navigation_ul--li"> 
+                    <a href="#">HOME</a>         
+                </li>
+                <li class="navigation_ul--li">
+                    <a href="#">VISIT</a>
+                </li>
+                <li class="navigation_ul--li">
+                    <a href="#">EXHIBITIONS</a>
+                </li>
+                <li class="navigation_ul--li">
+                    <a href="#">PROGRAMS & EVENTS</a>
+                </li>
+                <li class="navigation_ul--li">
+                    <a href="#">STORE</a>
+                </li>
+                <li class="footer_Sitemap--li">
+                    <a class="navigaton__cta" href="#">
+                        <button>MEMBERSHIP</button>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="header">
+                <div class="header_Info">
+                    <div class="header_Info--content">
+                        <h1>The Beautiful Porsche 911 GT3</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
+                    </div>
+                    <div class="header_Info--buttons">
+                        <a href="https://www.porsche.com/international/models/911/911-gt3-models/911-gt3/?fbclid=IwAR0XfVoO_NjV2Plu3Oz69BMopWUeXDOM4fX-qW4iTIQwJpeMvdsKTXdvk30">
+                            <button class="header_Info--buttons-1">Build Your Own</button>
+                        </a>
+                        <a href="https://www.dupontregistry.com/autos/results/porsche/911--gt3/2020:2023">
+                            <button class="header_Info--buttons-2">Find Dealer</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-img">
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="Main_infoContainer">
+                <div class="section Main_infoContainer--content">
+                    <div>
+                        <img src="./img/Porsche_911_GT3_toring_red.jpg" alt="911-GT3" id="Porsche_911_GT3_toring_red">
+                        <div>
+                            <h2>Discover your dream porsche</h2>
+                            <p>The Porsche 911 GT3 is a high-performance homologation model of the Porsche 911 sports car. It is a line of high-performance models,
+                                <span id="dots">...</span>
+                                <span id="more">which began with the 1973 911 Carrera RS. The GT3 has had a successful
+                                    racing career in the one-make national and regional Porsche 
+                                    Carrera Cup and GT3 Cup Challenge series, as well as the international Porsche 
+                                    Supercup supporting the FIA Formula 1 World Championship.</span>
+                            </p>
+                            <button onclick="myFunction()" id="myBtn">learn more</button>
+
+                            <script>
+                                function myFunction() {
+                                var dots = document.getElementById("dots");
+                                var moreText = document.getElementById("more");
+                                var btnText = document.getElementById("myBtn");
+
+                                if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "learn more"; 
+                                    moreText.style.display = "none";
+                                } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Show less"; 
+                                    moreText.style.display = "inline";
+                                }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <img src="./img/Porsche-911-GT3.jpeg" alt="911-GT3" id="Porsche-911-GT3">
+                </div>
+            </div>
+
+            <div class="models_container">
+                <div class="section models_container--content">
+                    <div class="models_container--content-header">
+                        <h3>Gt3 Models</h3>
+                        <button>
+                            <a href="https://www.pinterest.com/search/pins/?q=992%20gt3&rs=typed">VIEW ALL POSTS</a>
+                        </button>
+                    </div>
+
+                    <div class="models_container--contentContainer">
+                    <div class="models_container--content-info">
+                            <div>
+                                <h3>PORSCHE 911 GT 3</h3>
+                                <p>The Porsche 911 GT3 stands for everything that makes a real sports car: the hunt for every hundredth  
+                                    <span id="dots1">...</span>
+                                    <span id="more1">of a second, the quest for every gram less weight, the will to beat your best times. In short: the incomparable kick of pure adrenaline. The unadulterated thrill of the racetrack can now also be worn on your wrist: in the form of the Porsche Design Chronograph 911 GT3.</span>
+                                </p>
+                                <button onclick="myFunction1()" id="myBtn1">Show more</button>
+
+                                <script>
+                                    function myFunction1() {
+                                    var dots = document.getElementById("dots1");
+                                    var moreText = document.getElementById("more1");
+                                    var btnText = document.getElementById("myBtn1");
+
+                                    if (dots.style.display === "none") {
+                                        dots.style.display = "inline";
+                                        btnText.innerHTML = "Show more"; 
+                                        moreText.style.display = "none";
+                                    } else {
+                                        dots.style.display = "none";
+                                        btnText.innerHTML = "Show less"; 
+                                        moreText.style.display = "inline";
+                                    }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="models_container--content-ModelsContainer">
+                            <div class="models_container--content-Allmodel">
+                                <img src="./img/Porsche_911_GT3_toring_red_2.jpg" alt="Porsche 911 GT3 toring">
+                                <div class="dotsCustomise">
+                                    <h4>GT 3 Touring</h4>
+                                    <p>The 911 GT3 with Touring Package also sets the performance tone  but with 
+                                        <!-- <span id="dots2">...</span> -->
+                                        <span id="more2">focus primarily on the road. Thanks to ingenious aerodynamics, cornering remains impressive, even without a large rear wing.</span>
+                                        <button onclick="myFunction2()" id="myBtn2">click here</button>
+                                    </p>
+                                    <script>
+                                        function myFunction2() {
+                                        // var dots = document.getElementById("dots2");
+                                        var moreText = document.getElementById("more2");
+                                        var btnText = document.getElementById("myBtn2");
+    
+                                        if (dots.style.display === "none") {
+                                            dots.style.display = "inline";
+                                            btnText.innerHTML = "click here"; 
+                                            moreText.style.display = "none";
+                                        } else {
+                                            dots.style.display = "none";
+                                            btnText.innerHTML = "click here"; 
+                                            moreText.style.display = "inline";
+                                        }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div class="models_container--content-Allmodel" id="border_top_bottom">
+                                <img src="./img/Porsche_911_gt3_red_2.jpg" alt="Porsche 911 gt3 red">
+                                <div>
+                                    <h4>GT 3</h4>
+                                    <p>“It`s more apparent than ever that the 911 GT3 is part of a famous motorsport bloodline. Another phenomenal car”</p>
+                                </div>
+                            </div>
+
+                            <div class="models_container--content-Allmodel">
+                                <img src="./img/Porsche_911_GT3_RS_red_2.jpg" alt="Porsche 911 gt3 rs red">
+                                <div>
+                                    <h4>GT 3 RS</h4>
+                                    <p>The 911 GT3 models are Porsche's gift to car enthusiasts. They are special and rare automobiles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+          <div class="section">
+                <div>
+                    <div class="footer_info">
+                        <div class="MeinLogo footerLogo">
+                            <div id="Porsche-911">PORSCHE 911</div>
+                            <div>992 GT3</div>
+                        </div>
+                        <div class="footer_info--info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div> 
+
+                    <div class="footer_Sitemap">
+                        <h4 class="footer_info--headers">Sitemap</h4>
+                        <ul class="footer_Sitemap--ul">
+                            <li class="footer_Sitemap--li">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="footer_Sitemap--li">
+                                <a href="">Visit</a>
+                            </li>
+                            <li class="footer_Sitemap--li">
+                                <a href="">Exhibitions</a>
+                            </li>
+                            <li class="footer_Sitemap--li">
+                                <a href="">Programs & Events</a>
+                            </li>
+                            <li class="footer_Sitemap--li">
+                                <a href="">Store</a>
+                            </li>
+                            <li class="footer_Sitemap--li">
+                                <a href="">Membership</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_Connect">
+                        <h4 class="footer_info--headers">Connect</h4>
+                        <div class="footer_Connect--icons">
+                            <a href="https://www.facebook.com/nika.damenia/" class="social fb">
+                                <img src="./img/fb.png" alt="fb">
+                            </a>
+                            <a href="https://www.instagram.com/damenia__n/" class="social insta">
+                                <img src="./img/insta.png" alt="insta">
+            
+                            </a>
+                            <a href="https://mail.google.com/" class="social mail">
+                                <img src="./img/mail.png" alt="mail">
+            
+                            </a>
+                            <a href="https://twitter.com/nikadamenia1" class="social twitter">
+                                <img src="./img/twitter.png" alt="twitter">
+            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </footer>
+        <div class="copyrigh">© 2023 NIKA DAMENIA</div>
+        
+    </body>
+</html>
