@@ -88,6 +88,10 @@ nav {
     gap: 158px;
 }
 
+.container {
+    display: none;
+}
+
 .navigation_ul {
     display: flex;
     align-items: center;
@@ -192,11 +196,6 @@ nav {
     color: #fff;
     cursor: pointer;
     letter-spacing: 0.15em;
-}
-
-.header_Info:hover {
-    background: #e4e4e46d;
-    border-radius: 40px;
 }
 
 .header-img {
@@ -354,8 +353,10 @@ nav {
 .models_container--content-info {
     background: url("../img/porsche.png") no-repeat;
     background-size: 520px 333px;
-    width: 510px;
-    height: 520px;
+    max-width: 510px;
+    max-height: 520px;
+    width: 100%;
+    height: 100%;
 }
 
 .models_container--content-info div {
@@ -563,9 +564,9 @@ nav {
     content: "@nikadamenia1";
 }
 
-/* copyrigh */
+/* copyright */
 
-.copyrigh {
+.copyright {
     background: #571F1F;
     padding: 30px 625px;
     color: #fff;
@@ -578,13 +579,120 @@ nav {
 /* for mobile */
 
 @media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
+
 }
 
 /* for tablets */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .MeinLogo {
+        background-size: 40px;
+        padding-left: 70px;
+    }
+    nav {
+        padding: 0 25px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+
+    }
+
+    .container {
+        display: inline;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      .change .bar2 {
+        opacity: 0;
+    }
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      
+    }
+    .header {
+            flex-direction: column;
+            align-items: center;
+    }
+
+    .header_Info {
+        align-items: center;
+    }
+
+    .header_Info--content > h1 {
+        font-size: 45px;
+    }
+        
+    .header_Info--content > p {
+         font-size: 22px;
+    }
+        
+    .navigation_ul{
+        display: none;
+    }
+    .header_Info--content, .header_Info--buttons {
+        width: 450px;
+    }
+
+    .Main_infoContainer {
+        background: url("../img/red-background_fortablet.png") top no-repeat #6B2929;
+        background-size: 950px 1170px;
+    }
+
+    .Main_infoContainer--content > div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #Porsche_911_GT3_toring_red {
+        max-width: 800px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+    }
+
+    .models_container--content{
+        padding: 0 25px;
+    }
+
+    .models_container--content-info {
+    background-size: 392px 251px;
+    max-width: 510px;
+    max-height: 520px;
+    width: 100%;
+    height: 100%;
+    }
     
+    .models_container--content-info > div {
+        padding: 30px 24px 20px 430px;
+        width: 280px;
+
+    }
+    
+    #myBtn1 {
+        margin: 0;
+    }
+
+    .models_container--contentContainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer > .section > div {
+        padding: 0 25px;
+        gap: 70px;
+    }
+    .copyright {
+        padding: 30px 100px;
+    }
 }
