@@ -55,7 +55,7 @@ h6 {
 .MeinLogo {
     background: url("../img/porsche_logo.png") no-repeat;
     background-size: 60px;
-    padding-left: 100px;
+    padding-left: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@ h6 {
 }
 
 .MeinLogo div:first-child {
-    font-weight: 500;
+    font-weight:700;
     font-size: 23px;
     color: #6B2929;
 }
@@ -76,6 +76,48 @@ h6 {
 
 
 /* || NAV */
+
+.navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+.navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #670404;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ .navigation .navigation_ul {
+    transform: translateY(0);
+}
+
+input:checked ~ .navigation .navbar-toggler {
+    margin-top: 35px;
+}
+
+input:checked ~ .navigation .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .navigation .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ .navigation .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
 nav {
     padding: 15px;
     display: flex;
@@ -115,7 +157,7 @@ nav {
     transition: all 1s;
 }
 
-.navigaton__cta > button:hover{
+.navigaton__cta > button:hover {
     border: solid 2px #670404;
     background: #533D3D;
     color: #fff;
@@ -131,6 +173,8 @@ nav {
 
 .navigation_ul--li > a:hover {
     color: #850303b1;
+    letter-spacing: 0.2em;
+    font-size: smaller;
 }
 /* || header */
 
@@ -216,7 +260,7 @@ nav {
 /* Main_info */
 
 .Main_infoContainer {
-    background: url("../img/red-beckground.png") top no-repeat #6B2929 ;
+    background: url("../img/red-background.png") top no-repeat #6B2929 ;
     background-size: 1509px 950px;
     padding: 95px 100px;
     display: flex;
@@ -572,127 +616,4 @@ nav {
     color: #fff;
     display: flex;
     justify-content: center;
-}
-
-/* || responsive */
-
-/* for mobile */
-
-@media screen and (max-width: 768px) {
-
-}
-
-/* for tablets */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .MeinLogo {
-        background-size: 40px;
-        padding-left: 70px;
-    }
-    nav {
-        padding: 0 25px;
-    }
-
-    .navigation {
-        justify-content: space-between;
-
-    }
-
-    .container {
-        display: inline;
-    }
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #670404;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-      
-      .change .bar1 {
-        transform: translate(0, 11px) rotate(-45deg);
-      }
-      
-      .change .bar2 {
-        opacity: 0;
-    }
-      
-      .change .bar3 {
-        transform: translate(0, -11px) rotate(45deg);
-      
-    }
-    .header {
-            flex-direction: column;
-            align-items: center;
-    }
-
-    .header_Info {
-        align-items: center;
-    }
-
-    .header_Info--content > h1 {
-        font-size: 45px;
-    }
-        
-    .header_Info--content > p {
-         font-size: 22px;
-    }
-        
-    .navigation_ul{
-        display: none;
-    }
-    .header_Info--content, .header_Info--buttons {
-        width: 450px;
-    }
-
-    .Main_infoContainer {
-        background: url("../img/red-background_fortablet.png") top no-repeat #6B2929;
-        background-size: 950px 1170px;
-    }
-
-    .Main_infoContainer--content > div {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #Porsche_911_GT3_toring_red {
-        max-width: 800px;
-        width: 100%;
-        max-height: 500px;
-        height: 100%;
-    }
-
-    .models_container--content{
-        padding: 0 25px;
-    }
-
-    .models_container--content-info {
-    background-size: 392px 251px;
-    max-width: 510px;
-    max-height: 520px;
-    width: 100%;
-    height: 100%;
-    }
-    
-    .models_container--content-info > div {
-        padding: 30px 24px 20px 430px;
-        width: 280px;
-
-    }
-    
-    #myBtn1 {
-        margin: 0;
-    }
-
-    .models_container--contentContainer {
-        flex-direction: column;
-        gap: 40px;
-    }
-    .footer > .section > div {
-        padding: 0 25px;
-        gap: 70px;
-    }
-    .copyright {
-        padding: 30px 100px;
-    }
 }

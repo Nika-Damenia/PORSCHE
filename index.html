@@ -8,16 +8,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
         <link rel="icon" href="./img/ICON_PORSCHE.png">
         <title>PORSCHE</title>
     </head>
     <body>
         <nav>
+            <input type="checkbox" id="toggle">
+
             <div class="section navigation">
                 <div class="MeinLogo">
                     <div>PORSCHE 911</div>
                     <div>992 GT3</div>
                 </div>
+                
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    
+                </label>
+
                 <ul class="navigation_ul">
                     <li class="navigation_ul--li"> 
                         <a href="#">HOME</a>         
@@ -40,17 +51,6 @@
                         </a>
                     </li>
                 </ul>
-                <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div>
-                  
-                  <script>
-                  function myFunction(x) {
-                    x.classList.toggle("change");
-                  }
-                  </script>
             </div>
         </nav>
         <header>
