@@ -63,7 +63,7 @@
     }
 
     .navigation_ul::before {
-        content: "MANU";
+        content: "MENU";
         color: #fff;
         font-weight: 700;
         font-size: 23px;
