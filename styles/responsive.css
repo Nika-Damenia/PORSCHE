@@ -72,8 +72,8 @@
     .navigation_ul::after {
         content: "nürbugring";
         position: relative;
-        left: 185px;
-        bottom: 160px;
+        left: 15px;
+        bottom: 270px;
         transform: rotate(45deg);
         font-family: 'Inter';
         font-weight: 400;
